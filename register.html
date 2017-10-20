@@ -5,9 +5,10 @@
 	
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/danielScripts.js"></script>
 	<title>REGISTER</title>
 </head>
-<body>
+<body onload="seeIfLogged()">
 
 	<!-- Fixed navbar -->
 
@@ -22,7 +23,7 @@
 				</button>
 				<a class="navbar-brand" href="#">THE ROAD LAYER</a>
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
+			<div id="navbar" class="navbar-collapse collapse">gi
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="leaderboard.html">Leaderboard</a></li>
@@ -36,16 +37,17 @@
 
 	<div class ="container">
 		<h1 class="text-center">Register</h1>
-		<form id="registerForm" onsubmit="">
+		<form id="registerForm" onsubmit="return false">
                         <input type="text" class="form-control text-center register" id="firstNameRegister" placeholder="First Name">
                         <input type="text" class="form-control text-center register" id="lastNameRegister" placeholder="Last Name">
                         <input type="text" class="form-control text-center register" id="emailRegister" placeholder="Email Address">
                         <input type="password" class="form-control text-center register" id="passwordRegister" placeholder="Password">
                         <input type="password" class="form-control text-center register" id="confirmPasswordRegister" placeholder="Confirm Password">
                     	<center>
-							<button class="btn btn-default " type="submit">Submit</button>
+							<button class="btn btn-default " type="submit" onclick="saveRegisterDetails()">Submit</button>
 						</center>
         </form>
+        <p id="registrationOutcome"></p>
 		
 	</div>
 
@@ -56,6 +58,7 @@
 			<p class="text-muted text-right">This is a game created by Daniel Ionita </p>
 			</div>
 		</div>
-	</footer>
+	</footer>	
+	
 </body>
 </html>
