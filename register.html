@@ -35,7 +35,7 @@
 		</div>
 	</nav>
 
-	<div class ="container">
+	<div class ="container" id="container11">
 		<h1 class="text-center">Register</h1>
 		<form id="registerForm" onsubmit="return false">
                         <input type="text" class="form-control text-center register" id="firstNameRegister" placeholder="First Name">
@@ -47,9 +47,15 @@
 							<button class="btn btn-default " type="submit" onclick="saveRegisterDetails()">Submit</button>
 						</center>
         </form>
-        <p id="registrationOutcome"></p>
+     </div>
+     	<center>
+        		<p id="loginOutcome2"> </p>
+        		<button class="btn btn-default " type="submit" id="logoutButton" hidden onclick="logout()"></button>
+        		 <p id="registrationOutcome"></p>
+        	</center>
+       
 		
-	</div>
+	
 
 
 	<footer class="footer">

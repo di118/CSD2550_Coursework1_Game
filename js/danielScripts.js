@@ -19,8 +19,13 @@
 		if(localStorage.loggedInUserEmail !== undefined)
 		{
 			var userDetails = JSON.parse(localStorage[localStorage.loggedInUserEmail])	
-			document.getElementById("registerForm").remove();
-			document.getElementById("loginOutcome2").innerHTML=userDetails.lastNameRegister + "logged in.";
+			document.getElementById("container11").remove();
+			document.getElementById("loginOutcome2").innerHTML=userDetails.lastNameRegister + " logged in.";
+			document.getElementById("logoutButton").innerText= "Logout";
+
+
+
+
 		}
 
 	}
@@ -49,8 +54,15 @@
 				}
 			else
 					document.getElementById("loginOutcome").innerHTML="Email or password not recognized."
-	}
+
+		}
+		
+
 
 
 }
-
+	function logout()
+	{
+		localStorage.loggedInUserEmail = undefined;
+		location.reload();
+	}
