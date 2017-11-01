@@ -38,11 +38,11 @@
 	<div class ="container" id="container11">
 		<h1 class="text-center">Register</h1>
 		<form id="registerForm" onsubmit="return false">
-                        <input type="text" class="form-control text-center register" id="firstNameRegister" placeholder="First Name">
-                        <input type="text" class="form-control text-center register" id="lastNameRegister" placeholder="Last Name">
-                        <input type="text" class="form-control text-center register" id="emailRegister" placeholder="Email Address">
-                        <input type="password" class="form-control text-center register" id="passwordRegister" placeholder="Password">
-                        <input type="password" class="form-control text-center register" id="confirmPasswordRegister" placeholder="Confirm Password">
+                        <input type="text" class="form-control text-center register" id="firstNameRegister" required placeholder="First Name">
+                        <input type="text" class="form-control text-center register" id="lastNameRegister" required placeholder="Last Name">
+                        <input type="email" class="form-control text-center register" id="emailRegister" required placeholder="Email Address">
+                        <input type="password" class="form-control text-center register" id="passwordRegister" required placeholder="Password">
+                        <input type="password" class="form-control text-center register" id="confirmPasswordRegister" required placeholder="Confirm Password">
                     	<center>
 							<button class="btn btn-default " type="submit" onclick="saveRegisterDetails()">Submit</button>
 						</center>
