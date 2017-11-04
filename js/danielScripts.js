@@ -18,7 +18,7 @@ function saveRegisterDetails(){
 		}
 		else
 		{
-			
+
 			document.getElementById("registrationOutcome").innerHTML = " Password doesn't match";
 			userDetails.passwordRegister = document.getElementById("passwordRegister").value;
 			userDetails.confirmPasswordRegister = document.getElementById("confirmPasswordRegister").value;
@@ -26,8 +26,8 @@ function saveRegisterDetails(){
 	}
 	else
 		document.getElementById("registrationOutcome").innerHTML = " Invalid inputs";
-	
-	
+
+
 
 }	
 
@@ -36,8 +36,9 @@ function seeIfLogged(){
 	{
 		var userDetails = JSON.parse(localStorage[localStorage.loggedInUserEmail])	
 		document.getElementById("container11").remove();
-		document.getElementById("loginOutcome2").innerHTML=userDetails.lastNameRegister + " logged in.";
+		document.getElementById("loginOutcome2").innerHTML=userDetails.lastNameRegister + " is currently logged in.";
 		document.getElementById("logoutButton").innerText= "Logout";
+		document.getElementById("logoutButton").style.display = "block";
 
 
 
@@ -72,7 +73,7 @@ function login(){
 			document.getElementById("loginOutcome").innerHTML="Email or password not recognized."
 
 	}
-	
+
 
 
 

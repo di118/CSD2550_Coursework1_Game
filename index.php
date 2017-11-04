@@ -1,26 +1,19 @@
 <?php
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand " href="#" >THE ROAD LAYER</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="leaderboard.html">Leaderboard</a></li>
-                    <li><a href="login.html">Login/Logout</a></li>
-                    <li><a href="register.html">Register</a></li>
-                </ul>
+    //Include the PHP functions to be used on the page 
+    include('common.php'); 
+    
+    //Output header and navigation 
+    outputHeader("Homepage");
+    outputNavbar();
+?>
 
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-
-
-?> 
+<!-- Contents of the page -->
+<body>
+    <div class ="container">
+            <canvas id="myCanvas" width="1000" height="800" style="border:1px solid #000000;"></canvas>
+    </div>
+</body>
+<?php
+    //Output the footer
+    outputFooter();
+?>

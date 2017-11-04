@@ -10,3 +10,8 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+ }
+ body.userBox {
+ 	width:800px; 
+ 	margin:0 auto;
+ }
