@@ -3,6 +3,8 @@ function saveRegisterDetails(){
 	var userDetails = {};
 	userDetails.firstName = document.getElementById("firstNameRegister").value;
 	userDetails.lastNameRegister = document.getElementById("lastNameRegister").value;
+	userDetails.postcodeRegister = document.getElementById("postcodeRegister").value;
+	userDetails.telephoneRegister = document.getElementById("telephoneRegister").value;
 	userDetails.emailRegister = document.getElementById("emailRegister").value;
 	userDetails.passwordRegister = document.getElementById("passwordRegister").value;
 	userDetails.confirmPasswordRegister = document.getElementById("confirmPasswordRegister").value;

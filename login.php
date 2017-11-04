@@ -3,8 +3,8 @@
     include('common.php'); 
     
     //Output header and navigation 
-    outputHeader("Login");
-    outputNavbar();
+    outputHeader("Login/Logout");
+   
 ?>
 
 <!-- Contents of the page -->

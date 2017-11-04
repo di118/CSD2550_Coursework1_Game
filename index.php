@@ -3,8 +3,8 @@
     include('common.php'); 
     
     //Output header and navigation 
-    outputHeader("Homepage");
-    outputNavbar();
+    outputHeader("Home");
+    
 ?>
 
 <!-- Contents of the page -->

@@ -7,8 +7,9 @@ function outputHeader($title){              //Ouputs the header for the page and
     echo '<script src="js/danielScripts.js"></script>';
     echo '<title>'. $title . '</title>';
     echo '</head>';
+    outputNavbar($title);
 }
-function outputNavbar()
+function outputNavbar($title)
 {
     echo   '<nav class="navbar navbar-inverse navbar-static-top">';
     echo    '   <div class="container">';
@@ -23,10 +24,13 @@ function outputNavbar()
     echo  '</div>';
     echo  '<div id="navbar" class="navbar-collapse collapse">';
     echo  '<ul class="nav navbar-nav navbar-right">';
-    echo   '<li ><a href="index.php">Home</a></li>';
-    echo   '<li><a href="leaderboard.php">Leaderboard</a></li>';
-    echo    '<li><a href="login.php">Login/Logout</a></li>';
-    echo    '<li><a href="register.php">Register</a></li>';
+    $pages = ["Home" => "index.php", "Leaderboard" => "leaderboard.php", "Login/Logout" => "login.php", "Register" => "register.php"];
+    foreach ($pages as $page => $url){
+        if ($title == $page)
+            echo "<li class='active'><a href=$url>$page</a></li>";
+        else
+            echo "<li><a href='$url'>$page</a></li>";
+    }
     echo   '</ul>';
 
     echo   '</div><!--/.nav-collapse -->';
@@ -44,7 +48,9 @@ function outputFooter(){
     echo    '<footer class="footer">';
     echo        '<div class="navbar navbar-default navbar-fixed-bottom">';
     echo            '<div class="container">';
-    echo            '<p class="text-muted text-right">This is a game created by Daniel Ionita </p>';
+    echo            '<center>';
+    echo            '<p class="text-muted text">This is a game created by Daniel Ionita &copy; </p>', date("Y");
+    echo            '</center>';
     echo            '</div>';
     echo        '</div>';
     echo    '</footer>';

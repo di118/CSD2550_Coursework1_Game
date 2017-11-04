@@ -4,7 +4,7 @@
     
     //Output header and navigation 
     outputHeader("Leaderboard");
-    outputNavbar();
+    
 ?>
 
 <!-- Contents of the page -->
