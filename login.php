@@ -1,22 +1,20 @@
 <?php
-    //Include the PHP functions to be used on the page 
-    include('common.php'); 
     
-    //Output header and navigation 
-    outputHeader("Login/Logout");
+    include('common.php');                          //Include the PHP functions to be used on the page  
+    outputHeader("Login/Logout");                   //Output header and navigation
    
 ?>
 
 <!-- Contents of the page -->
-<body onload="seeIfLogged()">
+<body onload="seeIfLogged()">                                       <!-- "seeIfLogged() - checks if the user is logged in already" -->
     <div class ="container" id="container11">
         <h1 class="text-center">Login/Logout</h1>
           
             <form id="registerForm" onsubmit="return false">
-                        <input type="text" class="form-control text-center register" id="emailLogin" placeholder="Email Address">
-                        <input type="password" class="form-control text-center register" id="passwordLogin" placeholder="Password">
+                        <input type="text" class="form-control text-center register" id="emailLogin" placeholder="Email Address">               <!-- Email login field -->
+                        <input type="password" class="form-control text-center register" id="passwordLogin" placeholder="Password">             <!-- Password login field -->
                         <center>
-                            <button class="btn btn-default " type="submit" onclick="login()">Login</button>
+                            <button class="btn btn-default " type="submit" onclick="login()">Login</button>                  <!-- Submit button which triggers login function -->
 
                         </center>
             </form>
@@ -24,11 +22,11 @@
 
             <center>
                 <p id="loginOutcome2"> </p>
-                <button hidden class="btn btn-default " type="submit" id="logoutButton" style="display: none;" onclick="logout()"></button>
+                <button hidden class="btn btn-default " type="submit" id="logoutButton" style="display: none;" onclick="logout()"></button>       <!-- logout button -->  
                 <p id="loginOutcome"> </p>
             </center>
 </body>
 <?php
-    //Output the footer
-    outputFooter();
+    
+    outputFooter();   //Output the footer
 ?>

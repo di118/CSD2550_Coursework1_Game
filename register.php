@@ -1,9 +1,7 @@
 <?php
-    //Include the PHP functions to be used on the page 
-    include('common.php'); 
-    
-    //Output header and navigation 
-    outputHeader("Register");
+
+    include('common.php'); 						 //Include the PHP functions to be used on the page 
+    outputHeader("Register");					//Output header and navigation 
     
 ?>
 
@@ -12,27 +10,27 @@
     <div class ="container" id="container11">
 		<h1 class="text-center">Register</h1>
 		<form id="registerForm" onsubmit="return false">
-                        <input type="text" class="form-control text-center register" id="firstNameRegister" required placeholder="First Name">
-                        <input type="text" class="form-control text-center register" id="lastNameRegister" required placeholder="Last Name">
-                        <input type="text" class="form-control text-center register" id="postcodeRegister" required placeholder="Postcode ">
-                        <input type="tel" class="form-control text-center register" id="telephoneRegister" required placeholder="Telephone number">
-                        <input type="email" class="form-control text-center register" id="emailRegister" required placeholder="Email Address">
-                        <input type="password" class="form-control text-center register" id="passwordRegister" required placeholder="Password">
-                        <input type="password" class="form-control text-center register" id="confirmPasswordRegister" required placeholder="Confirm Password">
+                        <input type="text" class="form-control text-center register" id="firstNameRegister" required placeholder="First Name">	<!-- Text field to input firstname -->
+                        <input type="text" class="form-control text-center register" id="lastNameRegister" required placeholder="Last Name">  <!-- Text field to input lastname -->
+                        <input type="text" class="form-control text-center register" id="postcodeRegister" required placeholder="Postcode ">  <!-- Text field to input postcode -->
+                        <input type="tel" class="form-control text-center register" id="telephoneRegister" required placeholder="Telephone number">  <!-- Telephone field to input phone number -->
+                        <input type="email" class="form-control text-center register" id="emailRegister" required placeholder="Email Address">   <!-- Email field to input email adress -->
+                        <input type="password" class="form-control text-center register" id="passwordRegister" required placeholder="Password">  <!-- Text field to input passowrd -->
+                        <input type="password" class="form-control text-center register" id="confirmPasswordRegister" required placeholder="Confirm Password">  <!-- Text field to confirm the password -->
                     	<center>
-							<button class="btn btn-default " type="submit" onclick="saveRegisterDetails()">Submit</button>
+							<button class="btn btn-default " type="submit" onclick="saveRegisterDetails()">Submit</button>		<!-- Submit button which saves the user VALID inputs in a JSON file -->
 						</center>
         </form>
      </div>
-     <div id ="userBox">
      	<center>
         		<p id="loginOutcome2"> </p>
-        		<button class="btn btn-default " type="submit" id="logoutButton" style="display: none;" onclick="logout()"></button>
+        		<button class="btn btn-default " type="submit" id="logoutButton" style="display: none;" onclick="logout()"></button>				<!-- Logout button -->
         		 <p id="registrationOutcome"></p>
         </center>
      </div>
 </body>
 <?php
-    //Output the footer
-    outputFooter();
+    
+    outputFooter();		//Output the footer
+
 ?>

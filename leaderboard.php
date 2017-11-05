@@ -1,9 +1,7 @@
 <?php
-    //Include the PHP functions to be used on the page 
-    include('common.php'); 
-    
-    //Output header and navigation 
-    outputHeader("Leaderboard");
+
+    include('common.php');          //Include the PHP functions to be used on the page 
+    outputHeader("Leaderboard");    //Output header and navigation 
     
 ?>
 
@@ -12,13 +10,13 @@
     <div class="container">
         <h1 class="text-center">Leaderboard</h1>
             <table class="table table-striped">
-                <tr>
-                    <th> Rank </th> 
-                    <th> Name </th> 
-                    <th> Score </th>
+                <tr>                                    <!-- Header leaderboard  -->
+                    <th> Rank </th>                     <!-- Rank colomn -->
+                    <th> Name </th>                     <!-- Name colomn -->
+                    <th> Score </th>                    <!-- Score colomn -->
                 </tr>
-                <tr>
-                    <td id="1">1.</td>
+                <tr>                                    <!-- First line leaderboard -->
+                    <td id="1">1.</td>                  <!-- All the names and scores will be added later using JavaScript -->   
                     <td>Timmy Turner</td>
                     <td>999</td>
                 </tr>
@@ -73,6 +71,7 @@
 
 </body>
 <?php
-    //Output the footer
-    outputFooter();
+
+    outputFooter();         //Output the footer
+
 ?>
