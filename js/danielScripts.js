@@ -51,7 +51,7 @@ function login(){
 	var email = document.getElementById("emailLogin").value;					// gets email adress 
 	if(localStorage[email] === undefined)										// Checks if the email is stored then
 	{
-		document.getElementById("loginOutcome").innerHTML = "Email not registered. Please create an account.";		// 	Displays email not found 
+		document.getElementById("loginOutcome").innerHTML = "Email or password not recognized.";		// 	Displays email  
 		return;
 	}
 	else
