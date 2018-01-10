@@ -25,7 +25,7 @@
      	<center>
         		<p id="loginOutcome2"> </p>
         		<button class="btn btn-default " type="submit" id="logoutButton" style="display: none;" onclick="logout()"></button>				<!-- Logout button -->
-        		 <p id="registrationOutcome"></p>
+        		 <p id="registrationOutcome"></p>				<!-- paragraph that shows status of the registration -->
         </center>
      </div>
 </body>

@@ -1,4 +1,5 @@
 Coursework-1 CSD2550
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Requirements: 
  Website that enables the user to play a game.
  The user plays the game alone or against the computer.
@@ -25,3 +26,23 @@ If the blocks are not aligned perfectly the threshold will dissappear. The game 
 	The website has 4 pages (please see attached). All pages are based on Bootstrap framework. The homepage with a canvas where the game will be implemented in Javascript. 
 	In order to play users need to create an account through “Register” page. Then if the users want to play again they can simply login in the “Login/Logout” page. Users details will be stored in HTML 5 Local Storage in JSON format along with the score which will be displayed on	 the leaderboard page(makes the user want to play again to beat other users highscore or own score).
 All pages include a footer and a navigation bar added to the website using PHP.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report : 
+
+I have created a game called “ The Road Layer “ using JavaScript, HTML, CSS, PHP.
+The aim of the game is to stack as many road tiles on top of each other in order to create the longest road. Each landed tile gives a score of 200 if the tiles match perfectly and a score of 100 if the tile lands on top of another tile without matching perfectly.
+In order to play the user has to press the START button, located on the top left corner of the page. After pressing the START button, the rails start moving to the right. The user has to press the SPACE key to release the road tile from the rail in order to create the road. If the user doesn’t release the tile before the rail reaches the end, it’s game over.
+The gameOver function displays the message “ Game over” along with the user’s current score. The score is saved using local storage and then displayed on the leaderboard. The leaderboard is sorted, highest score first.
+There is also a popup text in the right bottom corner
+which shows the user( if clicked) the aim of the game and instructions how to play.
+Under the START button, there is a table which shows who is logged in and the current score of the logged in user.
+User details including score are stored using JSON in HTML local storage. The repetitive blocks such as header and footer are displayed using PHP.
+The most difficult thing I found was designing the game. Luckily I found some very useful
+designs on the internet from “ParkMyCar” game from which I cropped the road layers needed.
+Libraries used:
+• Bootstrap
+• JQueryIonita Daniel – Report
+
+
+
+

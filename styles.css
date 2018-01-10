@@ -1,0 +1,23 @@
+body{
+    width: 500px;
+}
+.banner {
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+}
+.navigation{
+    text-align: center;
+    background-color: darkgoldenrod;
+    padding: 10px;
+}
+a{
+    margin: 10px;
+    color: white;
+}
+.selected {
+    width: 800px;
+    background-color: maroon;
+    padding: 10px;
+}
+
